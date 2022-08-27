@@ -84,4 +84,9 @@ body {
 .list-item-div {
   border-bottom: 1px solid hsl(233deg, 14%, 35%);
   vertical-align: middle;
+}
+
+.task-list__below {
+  margin: 2em auto;
+  font-size: 1rem;
 }/*# sourceMappingURL=styles.css.map */

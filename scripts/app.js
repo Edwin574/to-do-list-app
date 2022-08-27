@@ -21,7 +21,7 @@ newtask.addEventListener('keypress', function (e) {
     if (e.key == 'Enter') {
         const listItem = document.createElement('div')
         // listItem.classList.add('list-item-div')
-        listItem.setAttribute('class','list-item-div d-flex flex-row px-3 py-1 align-items-center justify-content-start gap-2')
+        listItem.setAttribute('class','list-item-div d-flex flex-row px-3 py-1 align-items-baseline justify-content-start gap-2')
         listItem.innerHTML = `<input type='checkbox' class='check-item '/>
         <p id='individual-item' class='strike pe-4'>${newtask.value}</p>
         <img src='./images/icon-cross.svg' class='delete-item' ?/>`
