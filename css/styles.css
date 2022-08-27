@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(235deg, 21%, 11%);
+  color: hsl(0deg, 0%, 98%);
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+}
+
+.to-do p {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+#new-task {
+  width: 100%;
+  height: 50px;
+  background-color: hsl(235deg, 24%, 19%);
+  color: white;
+  border: none;
+}
+
+.row1 {
+  background: url("../images/bg-desktop-dark.jpg") no-repeat center center/cover;
+  height: 30vh;
+  text-align: center;
+  position: relative;
+}
+
+.positioning {
+  position: absolute;
+  width: 50%;
+  margin: 0 auto;
+  top: 15%;
+  left: 25vw;
+  cursor: pointer;
+}
+
+.check-item, .delete-item {
+  clip-path: circle(46% at 50% 50%);
+}
+
+.check-item:checked + p {
+  color: hsl(234deg, 11%, 52%);
+  text-decoration: line-through;
+}
+
+#task-list {
+  margin: 1em 0;
+  background-color: hsl(235deg, 24%, 19%);
+  border-radius: 5px;
+}
+
+#dark {
+  opacity: 0;
+}
+
+.light {
+  background-color: hsl(0deg, 0%, 98%);
+  color: hsl(233deg, 14%, 35%);
+}
+
+.light #light {
+  opacity: 0;
+}
+
+.light #dark {
+  opacity: 1;
+}
+
+.mode {
+  width: 10px;
+  text-align: center;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.list-item-div {
+  border-bottom: 1px solid hsl(233deg, 14%, 35%);
+  vertical-align: middle;
+}/*# sourceMappingURL=styles.css.map */

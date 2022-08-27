@@ -1,0 +1,84 @@
+@use "./variables" as *;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: $VeryDarkBlue;
+    color: $VeryLightGray;
+    font-family: $font;
+    font-size: 18px;
+}
+.to-do p{
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+#new-task{
+    width: 100%;
+    height: 50px;
+    background-color: $VeryDarkDesaturatedBlue;
+    color: white;
+    border: none;
+}
+.row1 {
+    background: url("../images/bg-desktop-dark.jpg") no-repeat center center/cover;
+    // padding: 2em;
+    height: 30vh;
+    text-align: center;
+    position: relative;
+}
+.positioning{
+    position: absolute;
+    width: 50%;
+    margin: 0 auto;
+    top:15%;
+    left: 25vw;
+    cursor: pointer;
+    
+}
+.check-item,.delete-item{
+    clip-path: circle(46% at 50% 50%); 
+}
+.check-item:checked+p {
+    color: $DarkGrayishBlue;
+    text-decoration: line-through;
+}
+#task-list{
+    margin: 1em 0;
+    background-color: $VeryDarkDesaturatedBlue;
+    // box-shadow: 2px 2px 2px 3px $VeryDarkGrayishBlueb;
+    border-radius: 5px;
+}
+
+#dark {
+    opacity: 0;
+}
+
+.light {
+    background-color: $VeryLightGray;
+    color: $VeryDarkGrayishBlue;
+}
+
+.light #light {
+    opacity: 0;
+}
+
+.light #dark {
+    opacity: 1;
+}
+.mode{
+    width: 10px;
+    text-align: center;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+.list-item-div{
+   border-bottom: 1px solid $VeryDarkGrayishBlue;
+   vertical-align: middle;
+}
