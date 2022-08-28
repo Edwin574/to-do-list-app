@@ -28,21 +28,23 @@ body {
 .row1 {
   background: url("../images/bg-desktop-dark.jpg") no-repeat center center/cover;
   height: 30vh;
-  text-align: center;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .positioning {
   position: absolute;
-  width: 50%;
   margin: 0 auto;
   top: 15%;
-  left: 25vw;
   cursor: pointer;
 }
 
-.check-item, .delete-item {
+.check-item,
+.delete-item {
   clip-path: circle(46% at 50% 50%);
+  cursor: pointer;
 }
 
 .check-item:checked + p {
@@ -89,4 +91,39 @@ body {
 .task-list__below {
   margin: 2em auto;
   font-size: 1rem;
+}
+
+.light {
+  background-color: hsl(236deg, 33%, 92%);
+  color: hsl(233deg, 14%, 35%);
+}
+
+.light #task-list {
+  background-color: hsl(0deg, 0%, 98%);
+  color: hsl(233deg, 14%, 35%);
+}
+
+.light .to-do {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+}
+.light .to-do p {
+  color: hsl(236deg, 33%, 92%);
+}
+
+.light .row1 {
+  background: url("../images/bg-desktop-light.jpg") no-repeat center center/cover;
+  height: 30vh;
+  position: relative;
+}
+
+.light .check-item {
+  outline-color: hsl(234deg, 39%, 85%);
+}
+
+@media (max-width: 600px) {
+  .light .positioning {
+    width: 0%;
+  }
 }/*# sourceMappingURL=styles.css.map */
