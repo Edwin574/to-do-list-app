@@ -31,6 +31,7 @@ body {
     background: url("../images/bg-desktop-dark.jpg") no-repeat center center/cover;
     height: 30vh;
     // text-align: center;
+    width: 100%;
     position: relative;
     display: flex;
     justify-content: center;
@@ -131,10 +132,3 @@ body {
 }
 
 
-@media (max-width:600px) {
-    .light .positioning{
-        width: 0%;
-    }
-     
-    
-}
